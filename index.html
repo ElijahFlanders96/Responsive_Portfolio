@@ -20,6 +20,29 @@
             font-family: "Georgia", serif;
             font-weight: bold;
         }
+        #aboutme {
+            background-color: white;
+            margin-top: 10%;
+        }
+        @media screen and (max-width: 992px) {
+            #aboutme {
+                width: 65%;
+                margin-left: 3%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            #aboutme {
+                width: 65%;
+                margin-left: 3%;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            #aboutme {
+                width: 94%;
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+        }
     </style>
 
     <!-- JS, Popper.js, and jQuery -->
@@ -27,7 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark"> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#" id="My-Name">Elijah Flanders</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,24 +80,24 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" id="aboutme">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-7">
                 <div class="header">
                     <h1>About Me</h1>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-3">
-                <img class="img-responsive" src="https://pbs.twimg.com/profile_images/737359467742912512/t_pzvyZZ_400x400.jpg" alt="indexpic">
+            <div class="col-lg-5">
+                <img class="img-fluid" src="https://pbs.twimg.com/profile_images/737359467742912512/t_pzvyZZ_400x400.jpg" alt="indexpic">
             </div>
-            <div class="col-lg-4 col-md-3">
+            <div class="col-lg-6">
                 <p>The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be completed each time you hear this sound. [ding]</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-7 col-md-6">
+            <div class="col-lg-11">
                 <p>Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.</p>
             </div>
         </div>
